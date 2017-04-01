@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--安卓本身的颜色-->
+    <color name="colorPrimary">#f2f2f2</color>
+    <color name="colorPrimaryDark">#d1d1d1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--系统*************************************-->
+    <color name="system_appBg">#FFFFFF</color>
+    <color name="system_titleBarBg">#387899</color>
+    <color name="system_titleBarTxt">#ffffff</color>
+    <color name="system_sameTra">#e0000000</color>
+
+    <color name="translucent__bg">#60000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="system_state_selected_false_00">#ffffff</color>
+    <color name="system_state_selected_true_00">#17abf1</color>
+
+    <color name="system_state_pressed_false_00">#ffffff</color>
+    <color name="system_state_pressed_true_00">#17abf1</color>
+
+    <color name="system_state_pressed_false_01">@color/system_titleBarBg</color>
+    <color name="system_state_pressed_true_01">#17abf1</color>
+
+    <color name="system_line_color">@color/system_titleBarBg</color>
+    <color name="actionbar_bg_color">#464648</color>
+    <color name="system_menu_fontcolor">#000000</color>
+    <color name="system_text_fontcolor">#000000</color>
+    <color name="system_botton_fontcolor">#000000</color>
+    <color name="system_swipelistview_item_right_bg">#696969</color>
+
+    <color name="system_aboutsoft_topbg">#17abf1</color>
+    <color name="system_aboutsoft_middlebg">#ffffff</color>
+    <color name="system_aboutsoft_bottombg">#17abf1</color>
+
+    <!--线条灰色-->
+    <color name="FrameGray">#e2e2e2</color>
+    <!--植物类型-->
+    <color name="search_text">#FFababac</color>
+
+    <!--返回按钮的选择器效果-->
+    <color name="back_selected">#000000</color>
+    <color name="back_normal">#464648</color>
+
+    <!--植物首页-->
+    <color name="alarm_good">@android:color/holo_green_light</color>
+    <color name="alarm_middle">@android:color/holo_blue_light</color>
+    <color name="alarm_bad">@android:color/holo_red_light</color>
+    <color name="bg_top_tab_checked">#80000000</color>
+
+    <!--黑色和白色-->
+    <color name="white">@android:color/white</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_10">#1aFFFFFF</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_60">#99000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_10">#1A000000</color>
+
+    <!--按钮的颜色-->
+    <color name="Button_green">#5abb0c</color>
+    <color name="Button_green_dark">#4c970f</color>
+    <color name="Button_blue">#3a74d1</color>
+    <color name="Button_blue_dark">#366abe</color>
+
+    <!--控件-->
+    <color name="vline_bg">#000000</color>
+    <color name="hline_bg">#000000</color>
+
+    <color name="tab_bar_bg">#387899</color>
+    <color name="tab_selected_bg">#17abf1</color>
+
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+
+    <color name="system_spinerpopwindow_content_color">#666666</color>
+    <color name="system_spinerpopwindow_bg">#ffffffff</color>
+    <color name="system_spinerpopwindow_tv_edgecolor">@color/system_titleBarBg</color>
+
+    <!--登录文本的颜色-->
+    <color name="text_hint_color">#FFabb2b5</color>
+    <color name="Text_black">#383838</color>
+    <color name="TextGray">#989898</color>
+    <!--登陆记住密码的颜色-->
+    <color name="remember_psw">#FFdad8ce</color>
+
+    <!--rippel的颜色-->
+    <color name="rippelColor">#0099CC</color>
+    <color name="rippeBackground">#66FFFFFF</color>
+
+    <!--标题-->
+    <color name="title">#FF202020</color>
+    <color name="sub_title">#FFADADAD</color>
+
+    <!--list_item和bottom的样式-->
+    <color name="bg_setting">#FFEDEDED</color>
+    <color name="bg_orange">#fa8319</color>
+    <color name="bg_bottom">#3C3F41</color>
+
+    <!--蓝牙-->
+    <color name="system_bluetooth_text_bg_havedpairdevice">#17abf1</color>
+    <color name="system_bluetooth_text_color_havedpairdevice">#ffffff</color>
+    <!--蓝牙-->
+
+    <!--系统*************************************-->
+
+    <!--产品*************************************-->
+
+
+    <!--产品***************************-->
+
+</resources>

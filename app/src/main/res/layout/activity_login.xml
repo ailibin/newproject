@@ -1,0 +1,126 @@
+<com.splant.smartgarden.customModel.ShaderFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    >
+
+    <RelativeLayout
+        android:id="@+id/login_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/company_code"
+            style="@style/EditTextAppTheme"
+            android:hint="@string/hint_company_code"
+             />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_below="@id/company_code"
+            style="@style/EditTextAppTheme"
+            android:drawableLeft="@mipmap/ic_login_user"
+            android:hint="@string/hint_login_username"
+             />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/EditTextAppTheme"
+            android:layout_below="@id/username"
+            android:drawableLeft="@mipmap/ic_login_password"
+            android:hint="@string/hint_login_password"
+            android:inputType="textPassword"
+             />
+
+        <CheckBox
+            android:id="@+id/save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/password"
+            android:layout_marginTop="@dimen/margin_10"
+            android:button="@drawable/ic_remember_check_selector"
+            android:drawablePadding="@dimen/padding_15"
+            android:text="@string/save_password"
+            android:textColor="@color/remember_psw"
+            android:textSize="@dimen/textsize_12" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/save_password"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@drawable/bg_btn_login"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/blur_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/splant"
+        style="@style/login_normal_style"
+        android:text="sPlant"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_30"
+        android:visibility="gone" />
+
+    <com.splant.smartgarden.customModel.CircleImageView
+        android:id="@+id/circle_top_logo"
+        android:layout_width="@dimen/circleImageView_width_100"
+        android:layout_height="@dimen/circleImageView_height_100"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_place_holder_company_logo"
+        android:visibility="gone"
+         />
+
+    <ImageView
+        android:id="@+id/top_logo"
+        style="@style/login_normal_style"
+        android:src="@mipmap/logo0001"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash" />
+
+    <com.splant.smartgarden.customModel.RippleBackground
+        android:id="@+id/login_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rb_color="@color/rippeBackground"
+        app:rb_duration="1000"
+        app:rb_radius="@dimen/rippleRadius"
+        app:rb_rippleAmount="3"
+        app:rb_scale="6" />
+
+    <TextView
+        android:id="@+id/bottom_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:drawableRight="@mipmap/ic_splant_logo_s"
+        android:text="powered by "
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_14" />
+
+</com.splant.smartgarden.customModel.ShaderFrameLayout>

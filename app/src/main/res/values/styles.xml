@@ -1,0 +1,236 @@
+<resources xmlns:android="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--系统************************************-->
+    <!--<style name="AppTheme" parent="android:style/Theme.Black.NoTitleBar" type="text/css">-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    <!--</style>-->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar" type="text/css">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!--EditText的样式(登陆界面)-->
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <!--<item name="android:background">@drawable/apptheme_edit_text_holo_light</item>-->
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/padding_10</item>
+        <item name="android:background">@drawable/bg_btn_login</item>
+        <item name="android:drawablePadding">@dimen/padding_15</item>
+        <item name="android:padding">@dimen/padding_10</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/text_hint_color</item>
+    </style>
+
+    <!--登陆界面的一般样式-->
+    <style name="login_normal_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--天气的信息样式-->
+    <style name="weather_info_value">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="system_titlestyle" parent="android:Theme">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">51dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/system_titleBarBg</item>
+    </style>
+
+    <style name="system_titleBarIconStyle" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+
+    <style name="system_titleBarTxtStyle" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/system_titleBarTxt</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="system_activity_translucent_bg">
+        <item name="android:windowBackground">@color/translucent__bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="system_list_line">
+        <item name="android:divider">@color/system_line_color</item>
+        <item name="android:dividerHeight">@dimen/system_splitlinesize</item>
+        <item name="android:layout_marginLeft">@dimen/system_listview_marginleftright</item>
+        <item name="android:layout_marginRight">@dimen/system_listview_marginleftright</item>
+    </style>
+
+    <style name="system_titletxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/system_appBg</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="view_hline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/system_splitlinesize</item>
+        <item name="android:background">@color/system_line_color</item>
+    </style>
+
+    <style name="view_vline">
+        <item name="android:layout_width">@dimen/system_splitlinesize</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/system_line_color</item>
+    </style>
+
+    <!--控件-->
+    <style name="spinerTxtStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textSize">@dimen/spiner_textsize</item>
+        <item name="android:paddingRight">25dp</item>
+    </style>
+
+    <style name="spinerImgStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="system_editStyle" parent="android:Widget.EditText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--加载对话框-->
+    <style name="system_dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="system_dialog_loading" parent="@style/system_dialog_custom">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--加载对话框-->
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/seek_thumb</item>
+        <item name="android:thumbOffset">10.0dip</item>
+    </style>
+
+
+    <!--水平控件权重布局-->
+    <style name="widget_weight_horizontal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--天气的竖线-->
+    <style name="vertical_line">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/weather_divider_width_1</item>
+        <item name="android:layout_marginRight">@dimen/margin_10</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10</item>
+        <item name="android:background">@color/white_80</item>
+    </style>
+
+    <!--天气的textView的样式-->
+    <style name="weather_text_view">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textsize_14</item>
+        <item name="android:text">@string/unknown</item>
+    </style>
+
+    <!--语言切换的横线样式-->
+    <style name="change_language_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/profile_height_1</item>
+        <item name="android:layout_marginLeft">@dimen/margin_20</item>
+        <item name="android:layout_marginRight">@dimen/margin_20</item>
+        <item name="android:background">@color/bg_setting</item>
+    </style>
+
+    <!--植物列表textview的样式-->
+    <style name="plant_list_item">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sub_title</item>
+        <item name="android:textSize">@dimen/textsize_14</item>
+    </style>
+
+    <!--个人中心界面-->
+    <style name="profile_change_language_linealayout">
+        <item name="android:layout_height">@dimen/profile_height_44</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_recycle_item</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding_20</item>
+        <item name="android:paddingRight">@dimen/padding_20</item>
+    </style>
+
+    <style name="profile_change_language_textview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="profile_change_language_imageview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:src">@mipmap/ic_language_checked</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+
+    <!--控件-->
+    
+    <!--系统*************************-->
+
+    <!--产品*********************************-->
+
+
+
+    <!--产品*************************-->
+</resources>

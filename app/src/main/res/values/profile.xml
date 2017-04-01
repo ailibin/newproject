@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<item name="profile_scan" type="id"/>-->
+    <item name="profile_change_password" type="id"/>
+    <item name="profile_user_manual" type="id"/>
+    <item name="profile_change_language" type="id"/>
+    <item name="profile_about_splant" type="id"/>
+    <item name="profile_edit_plant" type="id"/>
+    <item name="profile_logout" type="id"/>
+
+    <array name="profile_id_array">
+        <!--<item>@id/profile_scan</item>-->
+        <item>@id/profile_change_password</item>
+        <item>@id/profile_user_manual</item>
+        <item>@id/profile_change_language</item>
+        <item>@id/profile_about_splant</item>
+        <item>@id/profile_edit_plant</item>
+        <item>@id/profile_logout</item>
+    </array>
+    <array name="profile_icon_array">
+        <!--<item>@drawable/ic_profile_scan</item>-->
+        <item>@mipmap/ic_profile_password</item>
+        <item>@mipmap/ic_profile_user_manual</item>
+        <item>@mipmap/ic_profile_language</item>
+        <item>@mipmap/ic_profile_about</item>
+        <item>@mipmap/ic_profile_edit_plant</item>
+        <item>@mipmap/ic_profile_logout</item>
+    </array>
+
+    <array name="profile_title_array">
+        <!--<item>扫描</item>-->
+        <item>修改密码</item>
+        <item>用户手册</item>
+        <item>切换语言</item>
+        <item>关于sPlant</item>
+        <!--2017.1.23屏蔽掉植物增删改查-->
+        <!--<item>植物设置</item>-->
+        <item>定时浇水设置</item>
+        <item>退出</item>
+    </array>
+    <array name="profile_descript_array">
+        <!--<item>扫描二维码</item>-->
+        <item>修改登录密码</item>
+        <item>介绍使用方法</item>
+        <item>切换界面语言</item>
+        <item>介绍sPlant</item>
+        <!--2017.1.23 屏蔽掉植物增删改查-->
+        <!--<item>添加/修改/删除 植物</item>-->
+        <item>定时浇水设置</item>
+        <item>退出账号</item>
+    </array>
+
+</resources>

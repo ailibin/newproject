@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height_20"
+        android:background="@color/bg_setting"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height_60"
+        android:background="@android:color/white"
+        android:drawableLeft="@mipmap/ic_profile_language"
+        android:drawablePadding="@dimen/padding_10"
+        android:gravity="center_vertical"
+        android:padding="@dimen/padding_20"
+        android:text="@string/title_change_language"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+
+    <View
+        style="@style/change_language_line"/>
+
+    <LinearLayout
+        android:id="@+id/en_panel"
+        style="@style/profile_change_language_linealayout">
+
+        <TextView
+            android:text="@string/english_language"
+            style="@style/profile_change_language_textview"/>
+
+        <ImageView
+            android:id="@+id/en_check_image"
+            style="@style/profile_change_language_imageview"/>
+    </LinearLayout>
+
+    <View
+       style="@style/change_language_line"/>
+
+    <LinearLayout
+        android:id="@+id/zh_panel"
+        style="@style/profile_change_language_linealayout">
+
+        <TextView
+            android:text="@string/chinese_language"
+            style="@style/profile_change_language_textview"/>
+
+        <ImageView
+            android:id="@+id/zh_check_image"
+            style="@style/profile_change_language_imageview"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_setting"/>
+</LinearLayout>

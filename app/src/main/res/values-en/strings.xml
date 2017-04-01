@@ -1,0 +1,138 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!--系统************************************-->
+    <string name="system_app_name">Active electronic stage lighting</string>
+    <string name="titleBarTxt">@string/system_app_name</string>
+
+
+    <string name="system_title_alert">Prompt</string>
+    <string name="system_ok">OK</string>
+    <string name="system_cancel">Cancel</string>
+    <string name="system_yes">Yes</string>
+    <string name="system_no">No</string>
+    <string name="system_connectserver_failurestate_txt">Connection server failed</string>
+    <!--控件-->
+    <string name="system_listfooterview_nomore">No more</string>
+    <string name="system_listfooterview_normal">See more</string>
+    <string name="system_listfooterview_ready">Release load more</string>
+    <!--控件-->
+
+    <!--文件选择-->
+    <string name="system_selectfile_title">Select file</string>
+    <string name="system_selectfile_createdefaultdir_failure_txt">Failed to create the default directory</string>
+    <string name="system_selectfile_cannot_deletedir_txt">Directory cannot be deleted</string>
+    <!--文件选择-->
+
+    <!--蓝牙连接-->
+    <string name="system_bluetooth_openbluetooth_txt">Open bluetooth</string>
+    <string name="system_bluetooth_searchbluetooth_txt">Search</string>
+    <string name="system_bluetooth_connect_title">Connecting equipment</string>
+    <string name="system_bluetooth_havedpairdevice">Paired devices</string>
+    <string name="system_bluetooth_discovery_title">Select Bluetooth device</string>
+    <string name="system_bluetooth_open_txt">Please open Bluetooth</string>
+    <string name="system_bluetooth_connect_success_txt">Bluetooth connection success</string>
+    <string name="system_bluetooth_connect_failure_txt">Bluetooth connection failed</string>
+    <string name="system_device_connect_success_txt">Successful connection equipment</string>
+    <string name="system_device_connect_failure_txt">Failure of connection device</string>
+    <!--蓝牙连接-->
+
+    <!--帮助-->
+    <string name="system_aboutsoft_help">Help</string>
+    <string name="system_help_title">Help word</string>
+    <string name="system_help_content">
+
+    </string>
+    <!--帮助-->
+
+    <!--关于-->
+    <string name="system_device_softversion">Device version</string>
+    <string name="system_aboutsoft_softversion">Software version</string>
+    <string name="system_aboutsoft_checkversion">Check Software version</string>
+    <string name="system_aboutsoft_copyright">Software copyright</string>
+    <!--关于-->
+
+    <!--语言选择-->
+    <string name="system_selectlanguage_title">Language selection</string>
+    <string name="system_selectlanguage_auto">Auto</string>
+    <string name="system_selectlanguage_chinese_simplified">Simplified Chinese</string>
+    <string name="system_selectlanguage_english">English</string>
+    <!--语言选择-->
+
+    <!--选择文件-->
+    <string name="system_selectfiles_title">Select file</string>
+
+
+    <!--主界面-->
+    <string-array name="bottom_title">
+        <item>plant</item>
+        <item>weather</item>
+        <item>material</item>
+        <item>mine</item>
+    </string-array>
+    <string name="press_again">press again to exit</string>
+
+    <!--个人信息中心-->
+    <string name="mine_company_name">Company name</string>
+    <string name="mine_city_name">city</string>
+    <string name="about_company">About sPlant</string>
+    <string name="change_password">Change password</string>
+    <string name="user_manual">User manual</string>
+    <string name="change_language">Language</string>
+    <string name="title_change_language">Change language</string>
+    <string name="chinese_language">zh_CN</string>
+    <string name="english_language">English</string>
+
+    <!--天气模块-->
+    <string name="unknown">未知</string>
+    <string name="refresh">Refresh</string>
+    <string name="temp_range" translatable="false"><xliff:g example="1.5" id="lower">%1$s</xliff:g>℃ ~ <xliff:g example="2.8" id="upper">%2$s</xliff:g>℃</string>
+
+    <!--植物种类页面-->
+    <string name="search">Search</string>
+
+    <!--植物界面-->
+    <string name="list">List</string>
+    <string name="map">Map</string>
+    <string name="all_plants">All Plants</string>
+    <string name="good">Good</string>
+    <string name="normal">Normal</string>
+    <string name="bad">Bad</string>
+    <string name="title_water_name">Water name:</string>
+    <string name="title_switch">Switch:</string>
+    <string name="title_no_choose">No choose</string>
+    <string name="title_no_switch_choose">Switch choose</string>
+
+    <!--登陆模块-->
+    <string name="save_password">Remember password</string>
+    <string name="login">Login</string>
+    <string name="hint_login_username">Account number</string>
+    <string name="hint_login_password">Password</string>
+    <string name="username_requires">account not empty</string>
+    <string name="password_requires">password not empty</string>
+    <string name="warm_prompt">Warm prompt：</string>
+    <string name="waiting">Visiting net，please wait&#8230;</string>
+    <string name="NoNetwork">Networking unused，retry later</string>
+    <string name="login_failure">Login failed，retry</string>
+
+    <!--网络模块-->
+    <string name="none">None</string>
+    <string name="WIFINetwork">WIFI Network</string>
+    <string name="MobileNetwork">Mobile Network</string>
+
+    <!--个人头像模块-->
+    <string-array name="getPhotos">
+        <item>photo</item>
+        <item>album</item>
+    </string-array>
+    <!--选择文件-->
+    <!--系统***********************-->
+
+    <!--产品****************************************************-->
+    <!--主页面-->
+
+
+    <!--主页面-->
+    <!--产品**************************-->
+
+</resources>

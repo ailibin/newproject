@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/progress_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_40"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/all_plants"
+            style="@style/widget_weight_horizontal"
+            android:text="@string/all_plants"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/unit_list_total_count"
+            style="@style/widget_weight_horizontal"
+            android:text="0"
+            android:textSize="@dimen/textsize_60" />
+
+        <TextView
+            android:id="@+id/unit_list_Network_state"
+            style="@style/widget_weight_horizontal"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.splant.smartgarden.customModel.MyDonutProgress
+            android:id="@+id/donut_progress_good"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            app:donut_circle_starting_degree="-90"
+            app:donut_finished_color="@color/alarm_good"
+            app:donut_progress="0"
+            app:donut_sub_text="@string/good"
+            app:donut_sub_text_color="@android:color/white"
+            app:donut_suffix_text=""
+            app:donut_text_color="@android:color/white"
+            app:donut_unfinished_stroke_width="@dimen/dount_stroke_width_2" />
+
+        <com.splant.smartgarden.customModel.MyDonutProgress
+            android:id="@+id/donut_progress_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:donut_circle_starting_degree="-90"
+            app:donut_finished_color="@color/alarm_middle"
+            app:donut_progress="0"
+            app:donut_sub_text="@string/normal"
+            app:donut_sub_text_color="@android:color/white"
+            app:donut_suffix_text=""
+            app:donut_text_color="@android:color/white"
+            app:donut_unfinished_stroke_width="@dimen/dount_stroke_width_2" />
+
+        <com.splant.smartgarden.customModel.MyDonutProgress
+            android:id="@+id/donut_progress_bad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_10"
+            app:donut_circle_starting_degree="-90"
+            app:donut_finished_color="@color/alarm_bad"
+            app:donut_progress="0"
+            app:donut_sub_text="@string/bad"
+            app:donut_sub_text_color="@android:color/white"
+            app:donut_suffix_text=""
+            app:donut_text_color="@android:color/white"
+            app:donut_unfinished_stroke_width="@dimen/dount_stroke_width_2" />
+
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

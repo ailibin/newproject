@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ripple"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:mrl_rippleInAdapter="false"
+    android:paddingBottom="@dimen/padding_10"
+    android:paddingTop="@dimen/padding_10">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/list_item_unit_status"
+            android:layout_width="@dimen/view_width_10"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_bright" />
+
+        <ImageView
+            android:id="@+id/list_item_unit_plant_image"
+            android:layout_width="@dimen/image_width_60"
+            android:layout_height="@dimen/image_height_60"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_water" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/padding_10"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/list_item_unit_area"
+                    style="@style/plant_list_item"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:drawableLeft="@mipmap/ic_profile_locale"
+                    android:drawablePadding="@dimen/padding_5"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_2" />
+
+                <TextView
+                    android:id="@+id/list_item_unit_plant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|left"
+                    android:layout_toLeftOf="@id/list_item_unit_area"
+                    android:gravity="center|left"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/textsize_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/list_item_unit_name"
+                    style="@style/plant_list_item"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/unit_detail_electricity"
+                    style="@style/weather_info_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/icon_electricity_unknow"
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/list_item_unit_water_name"
+                style="@style/plant_list_item"
+                android:layout_gravity="center|left"
+                android:text="B724" />
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

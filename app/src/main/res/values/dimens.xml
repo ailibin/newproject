@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--系统***************************************-->
+    <dimen name="system_splitlinesize">1dp</dimen>
+    <!--控件-->
+    <dimen name="system_spiner_itemheight">40dp</dimen>
+    <dimen name="spiner_textsize">12sp</dimen>
+    <dimen name="system_spiner_width">120dp</dimen>
+
+    <dimen name="system_listview_marginleftright">5dp</dimen>
+    <dimen name="system_parallaxscolllistview_default_height">180dp</dimen>
+
+    <!--天气界面-->
+    <dimen name="weather_tab_normal_week_text_size">22px</dimen>
+    <dimen name="weather_tab_normal_date_text_size">13px</dimen>
+    <dimen name="weather_height_60">230px</dimen>
+    <dimen name="weather_spacing_40">90px</dimen>
+    <dimen name="weather_chat_250">450px</dimen>
+    <dimen name="weather_image_width_20">36px</dimen>
+    <dimen name="weather_image_height_20">36px</dimen>
+    <dimen name="weather_divider_width_1">1.8px</dimen>
+
+    <!--控件padding大小-->
+    <dimen name="fragment_padding_left_16">28.8px</dimen>
+    <dimen name="fragment_padding_right_16">28.8px</dimen>
+    <dimen name="padding_2">3.6px</dimen>
+    <dimen name="padding_5">9px</dimen>
+    <dimen name="padding_10">18px</dimen>
+    <dimen name="padding_12">21.6px</dimen>
+    <dimen name="padding_15">27px</dimen>
+    <dimen name="padding_20">36px</dimen>
+    <dimen name="padding_30">54px</dimen>
+    <dimen name="padding_50">90px</dimen>
+
+    <!--circleImageView的大小-->
+    <dimen name="circleImageView_width_100">180px</dimen>
+    <dimen name="circleImageView_height_100">180px</dimen>
+
+    <!--返回按钮圆形控件和线-->
+    <dimen name="back_round_width">45px</dimen>
+    <dimen name="back_round_height">45px</dimen>
+    <dimen name="vertical_line_width">2px</dimen>
+    <dimen name="vertical_line_height">42px</dimen>
+
+    <!--欢迎界面控件-->
+    <dimen name="splash_btn_width_80">144px</dimen>
+    <dimen name="splash_btn_height_40">72px</dimen>
+    <dimen name="splash_line_height_2">2px</dimen>
+    <!--植物首页-->
+    <dimen name="top_tab_width_240">432px</dimen>
+    <dimen name="top_tab_height_30">54px</dimen>
+    <dimen name="top_tab_radius_2">4px</dimen>
+    <dimen name="dount_stroke_width_2">4px</dimen>
+    <dimen name="image_width_60">120px</dimen>
+    <dimen name="image_height_60">120px</dimen>
+    <dimen name="view_width_10">20px</dimen>
+
+
+
+    <!--个人中心-->
+    <dimen name="profile_width_60">108px</dimen>
+    <dimen name="profile_height_90">162px</dimen>
+    <dimen name="profile_height_60">108px</dimen>
+    <dimen name="profile_height_2">3.6px</dimen>
+    <dimen name="profile_height_70">126px</dimen>
+    <dimen name="profile_height_44">79.2px</dimen>
+    <dimen name="profile_height_1">1px</dimen>
+    <dimen name="profile_height_20">36px</dimen>
+
+    <!--textsize-->
+    <dimen name="textsize_10">20px</dimen>
+    <dimen name="textsize_11">22px</dimen>
+    <dimen name="textsize_12">24px</dimen>
+    <dimen name="textsize_13">26px</dimen>
+    <dimen name="textsize_14">28px</dimen>
+    <dimen name="textsize_15">30px</dimen>
+    <dimen name="textsize_16">32px</dimen>
+    <dimen name="textsize_17">34px</dimen>
+    <dimen name="textsize_18">36px</dimen>
+    <dimen name="textsize_19">38px</dimen>
+    <dimen name="textsize_20">40px</dimen>
+    <dimen name="textsize_24">48px</dimen>
+    <dimen name="textsize_30">60px</dimen>
+    <dimen name="textsize_50">100px</dimen>
+    <dimen name="textsize_60">120px</dimen>
+    <dimen name="textsize_70">140px</dimen>
+    <dimen name="textsize_80">160px</dimen>
+
+    <!--ripple的样式-->
+    <dimen name="rippleStrokeWidth">2px</dimen>
+    <dimen name="rippleRadius">64px</dimen>
+
+
+    <!--控件margin大小-->
+    <dimen name="fragment_margin_top_15">27px</dimen>
+    <dimen name="fragment_margin_bottom_15">27px</dimen>
+    <dimen name="margin_5">9px</dimen>
+    <dimen name="margin_2">3.6px</dimen>
+    <dimen name="margin_10">18px</dimen>
+    <dimen name="margin_11">19.8px</dimen>
+    <dimen name="margin_14">25.2px</dimen>
+    <dimen name="margin_15">27px</dimen>
+    <dimen name="margin_16">28.8px</dimen>
+    <dimen name="margin_20">36px</dimen>
+    <dimen name="margin_25">45px</dimen>
+    <dimen name="margin_30">54px</dimen>
+    <dimen name="margin_32">57.6px</dimen>
+    <dimen name="margin_40">72px</dimen>
+    <dimen name="margin_160">288px</dimen>
+
+    <!--activty的边距-->
+    <dimen name="activity_horizontal_margin">16px</dimen>
+    <dimen name="activity_vertical_margin">16px</dimen>
+    <!--系统**********************-->
+
+    <!--产品******************************************-->
+
+
+    <!--产品**************************-->
+
+
+
+
+
+
+</resources>

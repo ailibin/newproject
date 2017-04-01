@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.splant.smartgarden.customModel.DisRelativeLayout
+        android:id="@+id/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height_90"
+        android:layout_marginBottom="@dimen/fragment_margin_bottom_15"
+        android:layout_marginTop="@dimen/fragment_margin_top_15"
+        android:background="@drawable/bg_recycle_item"
+        android:clickable="true">
+
+        <com.splant.smartgarden.customModel.CircleImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/profile_width_60"
+            android:layout_height="@dimen/profile_height_60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:layout_marginRight="@dimen/margin_14"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_avator" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/mine_company_name"
+                android:textColor="@color/title"
+                android:textSize="@dimen/textsize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/locale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawableLeft="@mipmap/ic_profile_locale"
+                android:drawablePadding="@dimen/padding_5"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="@string/mine_city_name"
+                android:textColor="@color/sub_title"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:src="@mipmap/right_arrow" />
+    </com.splant.smartgarden.customModel.DisRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

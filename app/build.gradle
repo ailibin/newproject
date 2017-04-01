@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion Integer.parseInt(ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.splant.smartgarden"
+        minSdkVersion Integer.parseInt(ANDROID_BUILD_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName project.VERSION_NAME
+        renderscriptTargetApi 23
+        renderscriptSupportModeEnabled true
+//        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false // 设置代码进行混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            shrinkResources true //不打包没有用的资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.splant.smartgarden.daoModel.Gen'
+        targetGenDir 'src/main/java'
+    }
+
+    ext {
+        supportLibraryVersion = project.ANDROID_SUPPORT_LIBRARY_VERSION
+    }
+
+    buildToolsVersion '25.0.0'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/android-async-http-1.4.8.jar')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.google.dagger:dagger:2.7'
+    apt 'com.google.dagger:dagger-compiler:2.7'
+    compile 'org.greenrobot:greendao:3.1.1'
+    compile project(':autolayout')
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'commons-io:commons-io:2.4'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'jp.wasabeef:blurry:1.0.4'
+    compile 'com.github.bumptech.glide:glide:3.6.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.0'
+    compile 'com.github.lzyzsd:circleprogress:1.2.0@aar'
+    compile project(':bottom-navigation-bar')
+    compile 'com.balysv:material-ripple:1.0.2'
+}
