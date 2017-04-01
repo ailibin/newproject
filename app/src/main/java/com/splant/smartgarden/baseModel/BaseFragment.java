@@ -7,6 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
 import com.splant.smartgarden.R;
+import com.splant.smartgarden.SPlantApplication;
+import com.splant.smartgarden.daggerModel.Component.DaggerFragmentComponent;
+import com.splant.smartgarden.daggerModel.Component.FragmentComponent;
+import com.splant.smartgarden.daggerModel.Module.FragmentModel;
 import com.splant.smartgarden.utilModel.ToastUtil;
 
 import butterknife.ButterKnife;
@@ -34,6 +38,17 @@ public abstract class BaseFragment extends Fragment implements BaseView {
             NeedRefresh = false;
         }
     }
+
+    public FragmentComponent getFragmentComponent(){
+        return  DaggerFragmentComponent.builder()
+                .appComponent(SPlantApplication.getInstance().getAppComponent())
+                .fragmentModel(getFragmentModule())
+                .build();
+    }
+    public FragmentModel getFragmentModule(){
+        return new FragmentModel(this);
+    }
+
 
     @Override
     public void ShowToast(int msgId) {
